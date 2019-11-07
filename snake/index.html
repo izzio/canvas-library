@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="wrap">
+        <h1>贪吃蛇</h1>
+        <p class="score">分数: <span id="score_value">0</span></p>
+    </header>
+    <canvas class="wrap" id="snake" width="320" height="320" tabindex="1"></canvas>
+
+    <!-- Game Over Screen -->
+    <div id="gameover">
+        <h2>游戏结束</h2>
+        <p>请按 <span style="background-color: #FFFFFF; color: #000000">空格</span> 重新开始</p>
+        <a id="newgame_gameover">开始</a>
+        <a id="setting_gameover">设置</a>
+    </div>
+
+    <!-- Setting screen -->
+    <div id="setting">
+        <h2>设置</h2>
+
+        <a id="newgame_setting">新游戏</a>
+
+        <p>速度:
+            <input id="speed1" type="radio" name="speed" value="120" checked />
+            <label for="speed1">缓慢</label>
+            <input id="speed2" type="radio" name="speed" value="75" />
+            <label for="speed2">正常</label>
+            <input id="speed3" type="radio" name="speed" value="35" />
+            <label for="speed3">快速</label>
+        </p>
+
+        <p>墙壁:
+            <input id="wallon" type="radio" name="wall" value="1" checked />
+            <label for="wallon">开启</label>
+            <input id="walloff" type="radio" name="wall" value="0" />
+            <label for="walloff">关闭</label>
+        </p>
+
+    </div>
+
+    <!-- Main Menu Screen -->
+    <div id="menu">
+        <h2>贪吃蛇</h2>
+
+        <a id="newgame_menu">开  始</a>
+        <a id="setting_menu">设  置</a>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

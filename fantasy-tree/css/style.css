@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: Courier;
+}
+canvas {
+  background-color: #000;
+  cursor: pointer;
+}
